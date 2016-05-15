@@ -68,7 +68,7 @@ class Decoder(srd.Decoder):
         ('warnings', 'Warnings', (19,)),
     )
 
-    def __init__(self, **kwargs):
+    def __init__(self):
         self.samplerate = None
         self.state = 'WAIT FOR RISING EDGE'
         self.oldpins = None

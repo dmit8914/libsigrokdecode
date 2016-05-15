@@ -76,7 +76,7 @@ class Decoder(srd.Decoder):
         ('location', 'Current location', (10,)),
     )
 
-    def __init__(self, **kwargs):
+    def __init__(self):
         self.buf = []
         self.syncbuf = []
         self.swpackets = {}
